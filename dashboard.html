@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN V2 Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- TOP NAVIGATION -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <h2>🕌 IMAAN</h2>
+    </div>
+
+    <div class="nav-icons">
+        <i class="fa-regular fa-bell" id="notificationBell"></i>
+
+        <img src="images/profile.png" class="profile-icon" alt="Profile">
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <img src="images/hero.png" alt="Hero Background">
+
+    <div class="overlay">
+
+        <h1 id="welcome">Assalamu Alaikum</h1>
+
+        <p>May Allah fill your day with peace and blessings.</p>
+
+        <div class="hero-info">
+
+            <span id="todayDate">Saturday, June 27, 2026</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TOP CARDS -->
+
+<section class="dashboard-grid">
+
+    <div class="card">
+
+        <h2>🌙 Hijri Date</h2>
+
+        <h3 id="hijriDate">Loading...</h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🕌 Next Prayer</h2>
+
+        <h1 id="nextPrayer">Loading...</h1>
+
+        <p id="countdown">Loading...</p>
+
+    </div>
+
+</section>
+
+<!-- PRAYER TIMES -->
+
+<section class="card">
+
+<h2>Prayer Times</h2>
+<div id="prayerList">
+
+<div class="prayer">
+    <span>🌅 Fajr</span>
+    <div>
+        <button onclick="playAzan('Fajar')">🔊</button>
+        <b id="fajr">--:--</b>
+    </div>
+</div>
+
+<div class="prayer">
+    <span>☀️ Dhuhr</span>
+    <div>
+        <button onclick="playAzan('Dhuhr')">🔊</button>
+        <b id="dhuhr">--:--</b>
+    </div>
+</div>
+
+<div class="prayer">
+    <span>🌤 Asr</span>
+    <div>
+        <button onclick="playAzan('Asr')">🔊</button>
+        <b id="asr">--:--</b>
+    </div>
+</div>
+
+<div class="prayer">
+    <span>🌇 Maghrib</span>
+    <div>
+        <button onclick="playAzan('Maghrib')">🔊</button>
+        <b id="maghrib">--:--</b>
+    </div>
+</div>
+
+<div class="prayer">
+    <span>🌙 Isha</span>
+    <div>
+        <button onclick="playAzan('Isha')">🔊</button>
+        <b id="isha">--:--</b>
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- QUICK FEATURES -->
+
+<section class="card">
+
+<h2>Quick Features</h2>
+
+<div class="feature-grid">
+
+<a href="pages/quran.html" class="feature">
+    <img src="images/quran.jpg.png" alt="Quran">
+    <p>Quran</p>
+</a>
+
+<a href="pages/qibla.html" class="feature">
+    <img src="images/qibla.png" alt="Qibla">
+    <p>Qibla</p>
+</a>
+
+<a href="pages/tasbih.html" class="feature">
+    <img src="images/tasbih.png" alt="Tasbih">
+    <p>Tasbih</p>
+</a>
+
+<a href="pages/duas.html" class="feature">
+    <img src="images/dua.png" alt="Duas">
+    <p>Duas</p>
+</a>
+
+<a href="pages/mosques.html" class="feature">
+    <img src="images/mosque.png" alt="Mosques">
+    <p>Mosques</p>
+</a>
+
+<a href="pages/hajj.html" class="feature">
+    <img src="images/hajj.png" alt="Hajj">
+    <p>Hajj</p>
+</a>
+
+<a href="pages/umrah.html" class="feature">
+    <img src="images/umrah.png" alt="Umrah">
+    <p>Umrah</p>
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+<!-- DAILY AYAH -->
+
+<section class="card">
+
+<h2>📖 Daily Ayah</h2>
+
+<p id="dailyAyah">
+
+Loading...
+
+</p>
+
+</section>
+
+<!-- DAILY DUA -->
+
+<section class="card">
+
+<h2>🤲 Daily Dua</h2>
+
+<h3 id="duaArabic">
+
+Loading...
+
+</h3>
+
+<br>
+
+<p id="duaEnglish">
+
+Loading...
+
+</p>
+
+</section>
+
+<!-- HADITH -->
+
+<section class="card">
+
+<h2>📚 Hadith of the Day</h2>
+
+<p id="dailyHadith">
+
+Loading...
+
+</p>
+
+</section>
+
+<!-- NAME OF ALLAH -->
+
+<section class="card">
+
+<h2>❤️ Name of Allah</h2>
+
+<h1 id="allahName">
+
+Loading...
+
+</h1>
+
+<p id="allahMeaning">
+
+Loading...
+
+</p>
+
+</section>
+
+<!-- PRAYER TRACKER -->
+
+<section class="card">
+
+<h2>Prayer Tracker</h2>
+
+<div class="tracker">
+
+<label><input type="checkbox" id="fajrCheck"> Fajr</label>
+
+<label><input type="checkbox" id="dhuhrCheck"> Dhuhr</label>
+
+<label><input type="checkbox" id="asrCheck"> Asr</label>
+
+<label><input type="checkbox" id="maghribCheck"> Maghrib</label>
+
+<label><input type="checkbox" id="ishaCheck"> Isha</label>
+
+</div>
+
+</section>
+<!-- Test Azan Button -->
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>LIGHTS OF IMAAN</h2>
+
+<p>Version 2.0</p>
+
+</footer>
+<!-- Notification Popup -->
+
+<div id="notificationPopup" class="notification-popup">
+
+    <h2>🔔 Prayer Centre</h2>
+
+    <div class="next-prayer-card">
+
+        <h4>🕌 Next Salah</h4>
+
+       <h1 id="popupNextPrayer">Loading...</h1>
+<h3 id="popupPrayerTime">--:--</h3>
+
+        <p id="popupCountdown">
+            Loading...
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div class="thought-card">
+
+        <h4>💭 Islamic Thought</h4>
+
+        <p id="dailyThought">
+            Loading...
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Prayer Alert -->
+
+<div id="prayerAlert" class="prayer-alert">
+
+    <div class="alert-box">
+
+        <h3>🕌 IMAAN</h3>
+
+        <h1>ALLAHU AKBAR</h1>
+
+        <h2 id="alertPrayerName">
+            Dhuhr
+        </h2>
+
+        <p>It's time for Salah</p>
+
+        <button id="closeAlert">
+            Pray Now
+        </button>
+</div> <!-- alert-box -->
+
+</div> <!-- prayerAlert -->
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
