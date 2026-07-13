@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN | Daily Duas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/duas.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="topbar">
+
+<a href="../dashboard.html" class="back">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>🤲 Daily Duas</h2>
+
+<i class="fa-solid fa-book-quran"></i>
+
+</header>
+
+<!-- Main Container -->
+
+<div class="container">
+
+<h1>Daily Duas</h1>
+
+<p class="subtitle">
+Remember Allah in every moment of your day
+</p>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Dua...">
+
+</div>
+
+<!-- Dua Categories -->
+
+<div class="dua-grid">
+
+<div class="dua-card" onclick="showDua('morning')">
+🌅
+<h3>Morning</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('evening')">
+🌙
+<h3>Evening</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('food')">
+🍽
+<h3>Food</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('sleep')">
+😴
+<h3>Sleep</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('travel')">
+🚗
+<h3>Travel</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('parents')">
+❤️
+<h3>Parents</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('masjid')">
+🕌
+<h3>Masjid</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('illness')">
+🤲
+<h3>Illness</h3>
+</div>
+
+<div class="dua-card" onclick="showDua('rizq')">
+💰
+<h3>Rizq</h3>
+</div>
+
+</div>
+
+<!-- Dua Display -->
+
+<div class="dua-display">
+
+<h2 id="duaTitle">
+Select a Dua
+</h2>
+
+<h1 id="duaArabic">
+
+🤲
+
+</h1>
+
+<p id="duaEnglish">
+
+Choose a category to read a dua.
+
+</p>
+
+</div>
+
+</div>
+
+<script src="../js/duas.js"></script>
+
+</body>
+
+</html>

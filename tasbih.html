@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN | Tasbih</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/tasbih.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="../dashboard.html" class="back">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>📿 Tasbih Counter</h2>
+
+<i class="fa-solid fa-mosque"></i>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h1 id="zikrName">Subhan Allah</h1>
+
+<p class="subtitle">
+Remember Allah with every tap
+</p>
+
+<!-- Counter -->
+
+<div class="counter-box">
+
+<h2 id="counter">0</h2>
+
+<p>Current Count</p>
+
+</div>
+
+<!-- Progress -->
+
+<div class="progress-box">
+
+<p>Goal</p>
+
+<h3 id="goalText">0 / 33</h3>
+
+<progress id="progressBar" value="0" max="33"></progress>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="buttons">
+
+<button id="tapBtn">
+
+<i class="fa-solid fa-hand-pointer"></i>
+
+Tap
+
+</button>
+
+<button id="resetBtn">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+Reset
+
+</button>
+
+</div>
+
+<!-- Goal -->
+
+<div class="goal-select">
+
+<label>Select Goal</label>
+
+<select id="goalSelect">
+
+<option value="33">33</option>
+
+<option value="99">99</option>
+
+<option value="100">100</option>
+
+<option value="1000">1000</option>
+
+</select>
+
+</div>
+
+<!-- Dhikr -->
+
+<div class="zikr-select">
+
+<label>Select Dhikr</label>
+
+<select id="zikrSelect">
+
+<option>Subhan Allah</option>
+
+<option>Alhamdulillah</option>
+
+<option>Allahu Akbar</option>
+
+<option>La ilaha illallah</option>
+
+<option>Astaghfirullah</option>
+
+</select>
+
+</div>
+
+<!-- Status -->
+
+<div class="status">
+
+<p id="status">
+
+Ready to begin
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/tasbih.js"></script>
+
+</body>
+
+</html>

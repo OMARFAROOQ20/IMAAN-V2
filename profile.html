@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN | Profile</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<a href="../dashboard.html" class="back">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h2 data-lang="profileTitle">👤 My Profile</h2>
+
+<i class="fa-solid fa-gear"></i>
+
+</header>
+
+<div class="container">
+
+<div class="profile-card">
+
+<div class="profile-photo">
+
+<img
+id="profileImage"
+src="../images/profile.png"
+class="profile-image">
+
+<input
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden>
+
+<button id="changePhoto" data-lang="changePhoto">
+📷 Change Photo
+</button>
+
+</div>
+
+<h1 id="userName">Guest User</h1>
+
+<p id="userEmail">guest@imaan.app</p>
+<p id="userCountry">
+📍 India
+</p>
+</div>
+
+<h2 class="section-title" data-lang="todayProgress">
+Today's Progress
+</h2>
+
+<div class="progress-grid">
+
+<div class="progress-card">
+<h3 data-lang="tasbih">
+📿 Tasbih
+</h3>
+<p id="tasbihCount">0</p>
+</div>
+
+<div class="progress-card">
+<h3 data-lang="quran">
+📖 Quran
+</h3>
+<p id="quranCount">0 Surahs</p>
+</div>
+
+<div class="progress-card">
+<h3 data-lang="duas">
+🤲 Duas
+</h3>
+<p id="duaCount">0</p>
+</div>
+
+<div class="progress-card">
+<h3 data-lang="streak">
+🔥 Streak
+</h3>
+<p id="streakCount">0 Days</p>
+</div>
+
+</div>
+
+<h2 class="section-title" data-lang="settings">
+Settings
+</h2>
+<div class="settings">
+<button class="setting-btn" data-lang="darkMode">
+🌙 Dark Mode
+</button>
+
+<button class="setting-btn" data-lang="notifications">
+🔔 Prayer Notifications
+</button>
+
+<button class="setting-btn" data-lang="share">
+📤 Share IMAAN
+</button>
+
+<button class="setting-btn" data-lang="about">
+ℹ️ About App
+</button>
+
+<button class="setting-btn logout" data-lang="logout">
+🚪 Logout
+</button>
+
+</div>
+
+</div>
+<script src="../js/profile.js"></script>
+<!-- Edit Profile Popup -->
+
+</div>
+</body>
+</html>

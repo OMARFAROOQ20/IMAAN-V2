@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN | Qibla Compass</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="../css/qibla.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="topbar">
+
+<a href="../dashboard.html" class="back">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>🕌 Qibla Compass</h2>
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+</header>
+
+<div class="container">
+
+<div class="glass-card">
+
+<h1>Find the Qibla</h1>
+
+<p class="subtitle">
+Always face the Kaaba with confidence
+</p>
+
+<div class="compass-area">
+
+<div class="compass">
+
+<div class="north">N</div>
+<div class="east">E</div>
+<div class="south">S</div>
+<div class="west">W</div>
+
+<div id="needle"></div>
+
+<div class="kaaba">
+
+🕋
+
+</div>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="info-card">
+
+<h4>Current Location</h4>
+
+<p id="location">
+Finding location...
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>Qibla Direction</h4>
+
+<p id="direction">
+--
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>Distance to Kaaba</h4>
+
+<p id="distance">
+Calculating...
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h4>Status</h4>
+
+<p id="status">
+Waiting for GPS...
+</p>
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button id="refreshBtn">
+
+<i class="fa-solid fa-rotate-right"></i>
+
+Refresh
+
+</button>
+
+<button id="calibrateBtn">
+
+<i class="fa-solid fa-compass"></i>
+
+Calibrate
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/qibla.js"></script>
+
+</body>
+
+</html>
