@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IMAAN LIVE</title>
+
+<link rel="stylesheet" href="css/splash.css">
+
+</head>
+
+<body>
+
+<div class="splash">
+
+<img src="images/logo.png" class="logo">
+
+<h1>IMAAN</h1>
+
+<h2>LIVE</h2>
+
+<p>Light of Imaan</p>
+
+<div class="loader">
+<div class="bar"></div>
+</div>
+
+</div>
+
+<script>
+
+setTimeout(()=>{
+
+if(localStorage.getItem("userName")){
+
+window.location="dashboard.html";
+
+}else{
+
+window.location="login.html";
+
+}
+
+},3500);
+
+</script>
+
+</body>
+
+</html>
